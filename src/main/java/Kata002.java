@@ -5,7 +5,7 @@ Then ((P-1)! + 1) / (P * P) should give a whole number.
 
 Your task is to create a function that returns true if the given number is a Wilson prime.
  */
-public class WilsonPrime {
+public class Kata002 {
 
     public static boolean am_i_wilson(double n) {
         //your code here

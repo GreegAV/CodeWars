@@ -23,7 +23,7 @@ the function nb_year should return n number of entire years needed to get a popu
 
 aug is an integer, percent a positive or null number, p0 and p are positive integers (> 0)
  */
-public class Arge {
+public class Kata001 {
     public static int nbYear(int p0, double percent, int aug, int p) {
         // your code
         int years=0;

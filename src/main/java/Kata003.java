@@ -10,7 +10,7 @@ But can you do it in 1 line of code and without any conditionals?
 
 
  */
-public class OppositeExample
+public class Kata003
 {
     public static int opposite(int number)
     {
