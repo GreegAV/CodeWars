@@ -14,5 +14,12 @@ Write a code that gives out the total amount for different days(d).
 public class Kata007 {
     public static int rentalCarCost(int d) {
         // Your solution here
+        if (d >= 7)
+            return d * 40 - 50;
+        else
+            if (d >= 3)
+                return d * 40 - 20;
+            else
+                return d * 40;
     }
 }
