@@ -1,7 +1,7 @@
-import java.util.Arrays;
-
 /*
-Given an array of integers.
+Kata:Count of positives / sum of negatives
+
+Task: Given an array of integers.
 
 Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
 
@@ -24,11 +24,5 @@ public class Kata014 {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-
-        System.out.println(countPositivesSumNegatives(new int[]{0}));
-        System.out.println(countPositivesSumNegatives(null));
     }
 }

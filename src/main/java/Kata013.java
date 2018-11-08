@@ -1,5 +1,7 @@
 /*
-Simple, remove the spaces from the string, then return the resultant string.
+Kata: Remove String Spaces
+
+Task: Simple, remove the spaces from the string, then return the resultant string.
  */
 class Kata013 {
     static String noSpace(final String x) {

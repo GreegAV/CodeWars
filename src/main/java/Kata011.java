@@ -1,5 +1,6 @@
 /*
-Your function takes two arguments:
+Kata:Twice as old
+Task: Your function takes two arguments:
 
 current father's age (years)
 current age of his son (years)

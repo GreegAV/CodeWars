@@ -1,4 +1,7 @@
 /*
+Kata: You only need one - Beginner
+Task:
+
 You will be given an array a and a value x.
 All you need to do is check whether the provided array contains the value.
 
@@ -15,6 +18,10 @@ public class Kata006 {
                 return true;
         }
         return false;
+
+        // Bests solutions
+        // return Arrays.indexOf(a, x) != -1;
+        // return Arrays.asList(a).contains(x);
     }
 
     public static void main(String[] args) {
