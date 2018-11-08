@@ -12,6 +12,6 @@ Patrick Feeney => P.F
 public class Kata008 {
 
     public static String abbrevName(String name) {
-        return name;
+        return name.substring(0,1).toUpperCase()+"."+ name.substring(name.indexOf(" ")+1,name.indexOf(" ")+2).toUpperCase();
     }
 }
