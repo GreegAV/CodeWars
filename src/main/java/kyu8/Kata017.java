@@ -17,6 +17,6 @@ Zero (0) is not checked for any specific sign. Negative zeros make no mathematic
  */
 public class Kata017 {
     public static int makeNegative(final int x) {
-        return (x<0)?x:-x;
+        return (x < 0) ? x : -x;
     }
 }

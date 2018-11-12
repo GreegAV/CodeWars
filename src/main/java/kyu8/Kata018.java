@@ -1,4 +1,5 @@
 package kyu8;
+
 /*
 Kata: Holiday VIII - Duty Free
 Task:
@@ -18,7 +19,7 @@ public class Kata018 {
 
     public static int dutyFree(int normPrice, int discount, int hol) {
 
-        return (int)((double) (100 * hol) / (double) (discount * normPrice));
+        return (int) ((double) (100 * hol) / (double) (discount * normPrice));
 
     }
 

@@ -1,4 +1,5 @@
 package kyu8;
+
 /*
 Kata: Basic Mathematical Operations
 Task: Your task is to create a function that does four basic mathematical operations.
@@ -14,14 +15,18 @@ basicOp('*', 5, 5)         // Output: 25
 basicOp('/', 49, 7)        // Output: 7
  */
 public class Kata020 {
-    public static Integer basicMath(String op, int v1, int v2)
-    {
-        switch (op){
-            case "+": return v1+v2;
-            case "-": return v1-v2;
-            case "*": return v1*v2;
-            case "/": return v1/v2;
-            default: return null;
+    public static Integer basicMath(String op, int v1, int v2) {
+        switch (op) {
+            case "+":
+                return v1 + v2;
+            case "-":
+                return v1 - v2;
+            case "*":
+                return v1 * v2;
+            case "/":
+                return v1 / v2;
+            default:
+                return null;
         }
     }
 }

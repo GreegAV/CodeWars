@@ -2,6 +2,7 @@ package kyu8;
 
 import kyu8.Kata017;
 import org.junit.Test;
+
 import static org.junit.Assert.assertEquals;
 
 public class Kata017Test {
