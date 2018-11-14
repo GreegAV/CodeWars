@@ -1,7 +1,5 @@
 package kyu8;
 
-import java.util.Arrays;
-
 /*
 Kata: My head is at the wrong end!
 

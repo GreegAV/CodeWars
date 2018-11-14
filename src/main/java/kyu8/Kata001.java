@@ -1,42 +1,19 @@
 package kyu8;
 
 /*
-Kata: Growth of a Population
-Task:
-In a small town the population is p0 = 1000 at the beginning of a year.
-The population regularly increases by 2 percent per year and moreover
-50 new inhabitants per year come to live in the town.
-How many years does the town need to see its population greater or equal to p = 1200 inhabitants?
+Kata: Function 1 - hello world
 
-At the end of the first year there will be:
-1000 + 1000 * 0.02 + 50 => 1070 inhabitants
+Task: Description:
+Make a simple function called greet that returns the most-famous "hello world!".
 
-At the end of the 2nd year there will be:
-1070 + 1070 * 0.02 + 50 => 1141 inhabitants (number of inhabitants is an integer)
-
-At the end of the 3rd year there will be:
-1141 + 1141 * 0.02 + 50 => 1213
-
-It will need 3 entire years.
-
-More generally given parameters:
-
-p0, percent, aug (inhabitants coming or leaving each year), p (population to surpass)
-
-the function nb_year should return n number of entire years needed to get a population greater or equal to p.
-
-aug is an integer, percent a positive or null number, p0 and p are positive integers (> 0)
+Style Points
+Sure, this is about as easy as it gets.
+But how clever can you be to create the most creative hello world you can think of?
+What is a "hello world" solution you would want to show your friends?
  */
 public class Kata001 {
-    public static int nbYear(int p0, double percent, int aug, int p) {
-        // your code
-        int years=0;
-        int currentPopulation=p0;
-        while (currentPopulation<p) {
-            currentPopulation+=aug+currentPopulation*percent/100;
-            years++;
-        }
-
-        return years;
+    public static String greet() {
+        //Make it say "hello world!"
+        return "Hi!";
     }
 }
