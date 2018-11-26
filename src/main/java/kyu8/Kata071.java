@@ -14,7 +14,6 @@ For calculating the average point you may add your point to the given array!
  */
 public class Kata071 {
     public static boolean betterThanAverage(int[] classPoints, int yourPoints) {
-        // Your code here
         int sum = 0;
         for (int point : classPoints) {
             sum += point;
