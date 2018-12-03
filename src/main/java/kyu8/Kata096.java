@@ -21,7 +21,6 @@ Advanced users should easily be able to do this in one line.
  */
 public class Kata096 {
     public static String smash(String... words) {
-        // TODO Write your code below this comment please
         return String.join(" ",words);
     }
 }
