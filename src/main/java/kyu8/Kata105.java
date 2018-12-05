@@ -18,10 +18,9 @@ For Python: return True or False
  */
 public class Kata105 {
     public int pythagoreanTriple(int[] triple) {
-        int a = (int) Math.pow(triple[0], 2);
-        int b = (int) Math.pow(triple[1], 2);
-        int c = (int) Math.pow(triple[2], 2);
-        if (a + b == c || a + c == b || b + c == a) return 1;
-        return 0;
+        int a = triple[0] * triple[0];
+        int b = triple[1] * triple[1];
+        int c = triple[2] * triple[2];
+        return ((a + b == c) || (a + c == b) || (b + c == a)) ? 1 : 0;
     }
 }
