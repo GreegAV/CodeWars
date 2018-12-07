@@ -13,7 +13,7 @@ public class Kata113Test {
 
     @Test
     public void BasicTest2() {
-        assertEquals(0, Kata113.sum(new int[]{0,0,0,0,0}));
+        assertEquals(0, Kata113.sum(new int[]{0, 0, 0, 0, 0}));
     }
 
     @Test
