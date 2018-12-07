@@ -24,7 +24,6 @@ public class Kata112 {
         for (int i = 0; i < array.length; i++) {
             newArray[i] = ((int) Math.sqrt(array[i]) * Math.sqrt(array[i]) == array[i]) ? (int) Math.sqrt(array[i]) : array[i] * array[i];
         }
-
         return newArray;
     }
 }
