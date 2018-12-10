@@ -1,5 +1,7 @@
 package kyu8;
 
+import java.util.Arrays;
+
 /*
 Kata: Find Maximum and Minimum Values of a List
 Task:Your task is to make two functions, max and min (maximum and minimum in PHP)
@@ -18,20 +20,12 @@ You may consider that there will not be any empty arrays/vectors.
  */
 public class Kata117 {
     public int min(int[] list) {
-        int min = list[0];
-        for (int tmp : list) {
-            if (min > tmp)
-                min = tmp;
-        }
-        return min;
+        Arrays.sort(list);
+        return list[0];
     }
 
     public int max(int[] list) {
-        int max = list[0];
-        for (int tmp : list) {
-            if (max < tmp)
-                max = tmp;
-        }
-        return max;
+        Arrays.sort(list);
+        return list[list.length - 1];
     }
 }
