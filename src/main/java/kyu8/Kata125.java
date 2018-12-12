@@ -15,7 +15,6 @@ public class Kata125 {
     }
 
     public void swapValues() {
-//        Object[] args = new Object[]{arguments[0], arguments[1]};
         Object temp = arguments[0];
         arguments[0] = arguments[1];
         arguments[1] = temp;
