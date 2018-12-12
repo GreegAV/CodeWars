@@ -14,4 +14,9 @@ public class Kata128Test {
     public void Test_02() {
         assertEquals(173735326.38, Kata128.TwoDecimalPlaces(173735326.3783732637948948), 0.00);
     }
+
+    @Test
+    public void Test_03() {
+        assertEquals(173735326.33, Kata128.TwoDecimalPlaces(173735326.33333333), 0.00);
+    }
 }
