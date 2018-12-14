@@ -16,7 +16,9 @@ Zero alone is fine, don't worry about it. Poor guy anyway
  */
 public class Kata138 {
     public static int noBoringZeros(int n) {
-        // your code
+        if (n == 0)
+            return n;
+
         while (n % 10 == 0)
             n /= 10;
         return n;
