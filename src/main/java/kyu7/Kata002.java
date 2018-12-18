@@ -37,8 +37,6 @@ public class Kata002 {
         Object[] obj = new Object[resStr.length + resInt.length];
         for (int i = 0; i < resInt.length; i++) {
             obj[i] = resInt[i];
-            System.out.println("resInt " + resInt[i]);
-            System.out.println("obj " + obj[i]);
         }
         for (int i = 0; i < resStr.length; i++) {
             obj[i + resInt.length] = resStr[i];
