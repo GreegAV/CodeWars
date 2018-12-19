@@ -13,15 +13,17 @@ Examples
  */
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
 public class Kata003 {
     public static List<String> myLanguages(final Map<String, Integer> results) {
-        ArrayList<String> sortedList = new ArrayList();
-        for (Map.Entry<String, Integer> entry : results.entrySet()) {
-            if (entry.getValue() >= 60) sortedList.add(entry.getKey());
-        }
-        return sortedList;
+        List<String> output = new ArrayList<>();
+        results.entrySet().stream()
+                .filter(o -> Integer.parseInt(o.getValue().toString()) >= 60)
+                .sorted(Collections.reverseOrder(Map.Entry.comparingByValue()))
+                .forEach(a -> output.add(a.getKey()));
+        return output;
     }
 }
