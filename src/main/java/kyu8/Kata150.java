@@ -1,5 +1,9 @@
 package kyu8;
 
+import java.util.Arrays;
+
+import static java.util.Arrays.sort;
+
 /*
 Kata: Expressions Matter
 Task
@@ -37,15 +41,9 @@ After placing signs and brackets, the Maximum value obtained from the expression
  */
 public class Kata150 {
     public static int expressionsMatter(int a, int b, int c) {
-        int test0 = a + b + c;
-        int test1 = (a + b) * c;
-        int test2 = a * (b + c);
-        int test3 = a * b * c;
-        int test4 = a + b * c;
-        int test5 = a * b + c;
-
-        return Math.max(Math.max(Math.max(Math.max(test0,test1),Math.max(test2,test3)),Math.max(test3,test4)),test5);
-
+        int[] maxx = {a + b + c, (a + b) * c, a * (b + c), a * b * c, a + b * c, a * b + c};
+        Arrays.sort(maxx);
+        return maxx[maxx.length - 1];
         // Your Code here... Happy Coding!
     }
 }
