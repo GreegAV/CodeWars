@@ -1,7 +1,6 @@
 package kyu8;
 
 import java.util.ArrayList;
-
 /*
 Kata: Multiple of index
 
@@ -19,7 +18,7 @@ Some cases:
 public class Kata163 {
     public static int[] multipleOfIndex(int[] array) {
         //your code;
-        ArrayList<Integer> arrayList=new ArrayList();
+        ArrayList<Integer> arrayList=new ArrayList<>();
         for (int i = 1; i <array.length ; i++) {
             if (array[i]%i==0)
                 arrayList.add(array[i]);
