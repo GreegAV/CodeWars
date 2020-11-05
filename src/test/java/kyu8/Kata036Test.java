@@ -5,7 +5,7 @@ import org.junit.Test;
 public class Kata036Test {
 
     private static void test(double expected, double[] arrVal, String[] arrUnit) {
-        assertEquals(expected, Kata036.solution(arrVal, arrUnit), expected * 1e-5);
+        assertEquals(expected, Kata036.Solution(arrVal, arrUnit), expected * 1e-5);
     }
 
     @Test
