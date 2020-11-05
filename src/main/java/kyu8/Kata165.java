@@ -15,6 +15,6 @@ Length should be between 4 and 16 characters (both included).
 public class Kata165 {
     public static boolean validateUsr(String s) {
         //glhf:)
-       return Pattern.matches("[a-z_0-9]{4,16}", s);
+       return s.matches("[a-z_0-9]{4,16}");
     }
 }
