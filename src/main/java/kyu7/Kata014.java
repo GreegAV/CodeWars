@@ -19,24 +19,12 @@ Output should be like:
  */
 public class Kata014 {
     public static int[] burner(int c, int h, int o) {
-        int water = 0;
-        int carbonDioxide = 0;
-        int methane = 0;
-        int remainH = h;
-        int remainO = o;
-        int remainC = c;
-        if (remainH >= 2 & remainO >= 1) {
-            water = Math.min(remainH / 2, remainO);
-            remainO -= water;
-            remainH -= 2 * water;
-        }
-        if (remainC >= 1 & remainO >= 2) {
-            carbonDioxide = Math.min(remainO / 2, remainC);
-            remainC -= carbonDioxide;
-        }
-        if (remainH >= 4 & remainC >= 1) {
-            methane = Math.min(remainH / 4, remainC);
-        }
+        int water = Math.min(h / 2, o);
+        h -= 2 * water;
+        o -= water;
+        int carbonDioxide = Math.min(c, o / 2);
+        c -= carbonDioxide;
+        int methane = Math.min(c, h / 4);
         return new int[]{water, carbonDioxide, methane};
     }
 }
