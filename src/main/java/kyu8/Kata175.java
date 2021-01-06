@@ -22,10 +22,10 @@ Note: newlines should be added between rows, but there should be no trailing new
 public class Kata175 {
     public static String multiTable(int num) {
         StringBuilder sb = new StringBuilder();
-        for (int i = 1; i <= 9; i++) {
-            sb.append(i).append(" * ").append(num).append(" = ").append(i * num).append("\n");
+        for (int i = 1; i <= 10; i++) {
+            int result = i * num;
+            sb.append(i).append(" * ").append(num).append(" = ").append(result).append("\n");
         }
-        sb.append(10 + " * ").append(num).append(" = ").append(10 * num);
-        return sb.toString(); // good luck
+        return sb.toString().trim(); // good luck
     }
 }
